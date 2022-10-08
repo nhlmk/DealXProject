@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.304">
-    <testcase classname="Login" name="Sign in to the website using a username and password" time="16.871">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.627">
+    <testcase classname="Login" name="Sign in to the website using a username and password" time="19.154">
         <system-out>
             <![CDATA[Given user is on the home page of the application...........................passed
 And user clicks sign-in link from the top right of the application..........passed

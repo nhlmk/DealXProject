@@ -19,4 +19,7 @@ public class LogInPage {
     @FindBy(id = "SubmitLogin")
     public WebElement signInButton;
 
+    @FindBy(xpath =  "//div[@class='alert alert-danger']")
+    public WebElement alert;
+
 }
