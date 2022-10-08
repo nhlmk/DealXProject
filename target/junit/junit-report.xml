@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.699">
-    <testcase classname="Search" name="Repeat TC1 again this time using a data driven approach using an external datafile such as an" time="27.327">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.304">
+    <testcase classname="Login" name="Sign in to the website using a username and password" time="16.871">
         <system-out>
             <![CDATA[Given user is on the home page of the application...........................passed
-When user enters search keyword from excel file, user sees the item related to search keyword in the first result.passed
+And user clicks sign-in link from the top right of the application..........passed
+And user enters "everythingIsPerfect@evrythng.com", "12345" in related field.passed
+And user clicks sign-in button..............................................passed
+Then user logs in successfully..............................................passed
 ]]>
         </system-out>
     </testcase>

@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/dealX/stepDefinitions",
         dryRun = false,
-        tags = "@Case3"
+        tags = "@Case4"
 
 
 )

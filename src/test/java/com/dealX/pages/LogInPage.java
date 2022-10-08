@@ -1,18 +1,22 @@
 package com.dealX.pages;
+
 import com.dealX.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BasePage {
-    public BasePage() {
+public class LogInPage {
+    public LogInPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    @FindBy(id = "email")
+        public WebElement usernameInput;
 
-    @FindBy(id = "search_query_top")
-    public WebElement searchInput;
+    @FindBy(id = "passwd")
+    public WebElement passwordInput;
 
-    @FindBy(className = "login")
-    public WebElement signInLink;
+    @FindBy(id = "SubmitLogin")
+    public WebElement signInButton;
+
 }
