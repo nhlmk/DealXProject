@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.627">
-    <testcase classname="Login" name="Sign in to the website using a username and password" time="19.154">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.605">
+    <testcase classname="Shopping Cart" name="User can increase the amount of product after adding the cart" time="25.165">
         <system-out>
             <![CDATA[Given user is on the home page of the application...........................passed
-And user clicks sign-in link from the top right of the application..........passed
-And user enters "everythingIsPerfect@evrythng.com", "12345" in related field.passed
-And user clicks sign-in button..............................................passed
-Then user logs in successfully..............................................passed
+When user adds any item to the cart.........................................passed
+And user goes to checkout page..............................................passed
+And user clicks the plus icon to increase amount............................passed
+Then user calculates total price and verifies it is matching with actual one.passed
 ]]>
         </system-out>
     </testcase>

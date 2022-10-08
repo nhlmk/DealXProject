@@ -34,6 +34,10 @@ public interface BrowserUtilities {
         }
     }
 
+    static double calculateTotalPrice(double unitPrice, int quantity){
+      return unitPrice*quantity;
+    }
+
 
 
 }

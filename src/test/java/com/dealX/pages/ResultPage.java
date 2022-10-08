@@ -10,7 +10,7 @@ public class ResultPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-@FindBy(xpath = "(//li[contains(@class, 'first-item')]//following::h5//a[contains(.,'Dress')])[1]")
-    public WebElement firstItem;
+//@FindBy(xpath = "(//li[contains(@class, 'first-item')]//following::h5//a[contains(.,'Dress')])[1]")
+//public WebElement firstItem;
 
 }

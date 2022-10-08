@@ -15,4 +15,13 @@ public class BasePage {
 
     @FindBy(className = "login")
     public WebElement signInLink;
+
+    @FindBy(xpath = "(//li[contains(@class,'first-item')])[1]")
+    public WebElement firstProduct;
+
+    @FindBy(xpath = "(//a[contains(.,'Add to cart')])[1]")
+    public WebElement addToCart;
+
+    @FindBy(xpath = "(//span[contains(.,'checkout')])")
+    public WebElement proceedToCheckout;
 }
