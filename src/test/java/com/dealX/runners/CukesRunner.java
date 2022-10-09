@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",},
         features = "src/test/resources/features",
         glue = "com/dealX/stepDefinitions",
-        dryRun = false,
-        tags = "@Case5"
+        dryRun = false
+        //tags = "@Case6"
 
 
 )

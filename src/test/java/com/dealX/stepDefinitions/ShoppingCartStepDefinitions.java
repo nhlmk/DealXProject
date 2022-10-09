@@ -21,13 +21,14 @@ public class ShoppingCartStepDefinitions {
     BasePage basePage = new BasePage();
     ShoppingCartPage shoppingCartPage = new ShoppingCartPage();
     JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+    Actions actions = new Actions(Driver.getDriver());
+
 
     @When("user adds any item to the cart")
     public void userAddsAnyItemToTheCart() {
 
         jse.executeScript("window.scrollBy(0,750)");
         BrowserUtilities.waitFor(2);
-        Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(basePage.firstProduct).perform();
         BrowserUtilities.waitFor(2);
         basePage.addToCart.click();

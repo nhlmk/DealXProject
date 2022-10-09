@@ -1,6 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.605">
-    <testcase classname="Shopping Cart" name="User can increase the amount of product after adding the cart" time="25.165">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="196.215">
+    <testcase classname="Login" name="Sign in to the website using a username and password" time="17.595">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+And user clicks sign-in link from the top right of the application..........passed
+And user enters "everythingIsPerfect@evrythng.com", "12345" in related field.passed
+And user clicks sign-in button..............................................passed
+Then user logs in successfully..............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User can not login with invalid data" time="12.762">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+And user clicks sign-in link from the top right of the application..........passed
+And user enters "", "" in related field.....................................passed
+And user clicks sign-in button..............................................passed
+Then user sees the error....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User can not login with invalid data 2" time="11.952">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+And user clicks sign-in link from the top right of the application..........passed
+And user enters "a", "" in related field....................................passed
+And user clicks sign-in button..............................................passed
+Then user sees the error....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User can not login with invalid data 3" time="10.259">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+And user clicks sign-in link from the top right of the application..........passed
+And user enters "", "a" in related field....................................passed
+And user clicks sign-in button..............................................passed
+Then user sees the error....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User can not login with invalid data 4" time="9.952">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+And user clicks sign-in link from the top right of the application..........passed
+And user enters "a", "a" in related field...................................passed
+And user clicks sign-in button..............................................passed
+Then user sees the error....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Navigation Menu" name="User can navigate to a certain page through navigation menu" time="7.398">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+When user hovers over different "Women" from main navigation menu, user should be able to see "Tops" under the related menus.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Navigation Menu" name="User can navigate to a certain page through navigation menu 2" time="7.29">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+When user hovers over different "Dresses" from main navigation menu, user should be able to see "Casual Dresses" under the related menus.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search" name="Navigate to the application and perform a search and verify that the first result matches your search criteria." time="10.651">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+When user enters below search "Dress" and clicks enter......................passed
+Then user should see the item related to search "Dress" in the first result.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search" name="Navigate to the application and perform a search and verify that the first result matches your search criteria. 2" time="11.354">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+When user enters below search "Blouse" and clicks enter.....................passed
+Then user should see the item related to search "Blouse" in the first result.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search" name="Navigate to the application and perform a search and verify that the first result matches your search criteria. 3" time="16.566">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+When user enters below search "T-shirt" and clicks enter....................passed
+Then user should see the item related to search "T-shirt" in the first result.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search" name="Store 3 search criteria in one variable separated by commas. Manipulate the string and store each search criteria in an array and use a loop to perform the search and verify." time="30.43">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+When user enters search keyword and user see the item related to search keyword in the first result.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search" name="Repeat TC1 again this time using a data driven approach using an external datafile such as an" time="27.247">
+        <system-out>
+            <![CDATA[Given user is on the home page of the application...........................passed
+When user enters search keyword from excel file, user sees the item related to search keyword in the first result.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Shopping Cart" name="User can increase the amount of product after adding the cart" time="21.997">
         <system-out>
             <![CDATA[Given user is on the home page of the application...........................passed
 When user adds any item to the cart.........................................passed
